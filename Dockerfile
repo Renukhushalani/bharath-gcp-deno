@@ -20,5 +20,5 @@ USER appuser
 RUN find / -perm +6000 -type f -exec chmod a-s {} \; || true
 
 EXPOSE 8080
-ENTRYPOINT ["/opt/app/app-start.sh"]
+ENTRYPOINT ["/bin/bash"]
 
